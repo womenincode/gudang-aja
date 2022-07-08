@@ -12,7 +12,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-
         <item name="ga_text_color">@color/black</item>
 
         <item name="text_title_x_large_style">@style/text_title_x_large_appearance</item>

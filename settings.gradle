@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "GudangAja"
 include ':app'
+include ':core'
+include ':widget'
