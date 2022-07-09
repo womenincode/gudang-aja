@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="button_attribute">
+        <attr name="alignment" format="enum">
+            <enum name="center" value="0" />
+            <enum name="start" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+
+        <attr name="android:icon" />
+        <attr name="android:text" />
+        <attr name="android:enabled" />
+    </declare-styleable>
+</resources>
