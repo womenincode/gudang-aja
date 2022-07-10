@@ -36,6 +36,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
         android:text="Welcome"
+        app:customValidation="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -62,6 +63,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/extendedFloatingActionButton2"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <id.amita.gudangaja.widget.field.WidgetTextField
+        android:id="@+id/edt_text_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:label="Coba aja test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:prefixText="+62"
+        app:suffixText="Kg" />
 
 
     <id.amita.gudangaja.widget.button.ButtonOutline

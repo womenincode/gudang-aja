@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="text_field_attribute">
+
+        <attr name="prefixText" />
+        <attr name="suffixText" />
+        <attr name="android:label" />
+        <attr name="android:hint" />
+        <attr name="helperText" />
+        <attr name="errorText" format="string" />
+        <attr name="android:inputType" />
+
+        <attr name="customValidation" format="enum">
+            <enum name="text" value="1" />
+            <enum name="email" value="2" />
+            <enum name="phone" value="3" />
+            <enum name="password" value="4" />
+        </attr>
+
+    </declare-styleable>
+</resources>

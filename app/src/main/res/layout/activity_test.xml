@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.utils.TestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <id.amita.gudangaja.widget.field.WidgetTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <id.amita.gudangaja.widget.field.WidgetTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input your text"
+            android:inputType="text"
+            android:label="This is label" />
+
+        <id.amita.gudangaja.widget.field.WidgetTextField
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input your phone"
+            android:inputType="phone"
+            android:label="Your phone"
+            app:errorText="Your phone is not valid"
+            app:prefixText="+62" />
+
+        <id.amita.gudangaja.widget.field.WidgetTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input your email"
+            android:inputType="textEmailAddress"
+            android:label="Your mail"
+            app:errorText="Your email is not valid"
+            app:helperText="Please use your email from gmail domain"
+            app:suffixText="\@gmail.com" />
+
+        <id.amita.gudangaja.widget.field.WidgetTextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input your password"
+            android:inputType="textPassword"
+            android:label="Your password"
+            app:customValidation="text" />
+
+    </LinearLayout>
+
+</ScrollView>
