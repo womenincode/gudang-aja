@@ -16,7 +16,7 @@
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:cardBackgroundColor="@color/primary"
-        app:cardCornerRadius="50dp"
+        app:cardCornerRadius="28dp"
         app:cardElevation="0dp"
         app:elevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
