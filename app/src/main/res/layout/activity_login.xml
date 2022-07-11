@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.login.LoginActivity">
+
+    <id.amita.gudangaja.widget.text.TextTitleLarge
+        android:id="@+id/textTitleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:text="Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <id.amita.gudangaja.widget.text.TextSubtitleSmall
+        android:id="@+id/textSubtitleSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Let's join with us the largers Farmes’s Werehouse"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textTitleLarge"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleLarge" />
+
+    <id.amita.gudangaja.widget.field.WidgetTextField
+        android:id="@+id/field_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Input your phone number"
+        android:inputType="phone"
+        android:label="Your Phone Number"
+        app:errorText="The phone number is not valid and not empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSubtitleSmall"
+        app:prefixText="+62" />
+
+    <id.amita.gudangaja.widget.field.WidgetTextField
+        android:id="@+id/field_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Input your password"
+        android:inputType="textPassword"
+        android:label="Your password"
+        app:customValidation="text"
+        app:errorText="Password should not empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/field_phone" />
+
+    <id.amita.gudangaja.widget.text.TextSubtitleSmall
+        android:id="@+id/textSubtitleSmall3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Forget your password?"
+        app:layout_constraintStart_toStartOf="@+id/textTitleLarge"
+        app:layout_constraintTop_toBottomOf="@+id/field_password" />
+
+    <id.amita.gudangaja.widget.text.TextSubtitle
+        android:id="@+id/textSubtitleSmall2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Click Here"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textSubtitleSmall3"
+        app:layout_constraintStart_toEndOf="@+id/textSubtitleSmall3"
+        app:layout_constraintTop_toTopOf="@+id/textSubtitleSmall3" />
+
+    <id.amita.gudangaja.widget.button.ButtonFill
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

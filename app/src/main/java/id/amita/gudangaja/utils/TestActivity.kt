@@ -1,4 +1,4 @@
-package id.amita.gudangaja.ui.utils
+package id.amita.gudangaja.utils
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
