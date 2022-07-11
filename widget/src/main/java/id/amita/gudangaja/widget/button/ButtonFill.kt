@@ -49,4 +49,21 @@ class ButtonFill @JvmOverloads constructor(
         buttonStyle.recycle()
     }
 
+    var isEnable: Boolean = true
+        set(value) {
+            field = value
+            binding.btnFill.apply {
+                isEnabled = value
+                setCardBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        if (value) R.color.primary else R.color.gray
+                    )
+                )
+            }
+        }
+
+    override fun setOnClickListener(l: OnClickListener?) {
+        binding.btnFill.setOnClickListener(l)
+    }
 }

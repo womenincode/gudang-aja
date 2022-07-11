@@ -54,4 +54,22 @@ class ButtonOutline @JvmOverloads constructor(
         buttonStyle.recycle()
     }
 
+    var isEnable: Boolean = true
+        set(value) {
+            field = value
+            binding.btnOutline.apply {
+                isEnabled = value
+                setCardBackgroundColor(
+                    ContextCompat.getColor(
+                        context,
+                        if (value) R.color.primary else R.color.gray
+                    )
+                )
+            }
+        }
+
+    override fun setOnClickListener(l: OnClickListener?) {
+        binding.btnOutline.setOnClickListener(l)
+    }
+
 }
