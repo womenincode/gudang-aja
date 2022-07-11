@@ -5,7 +5,6 @@ import android.content.Context
 import android.text.InputFilter
 import android.text.InputType
 import android.util.AttributeSet
-import android.util.Log
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isVisible
@@ -27,7 +26,6 @@ class WidgetTextField @JvmOverloads constructor(
     private val binding: WidgetTextFieldBinding by lazy {
         WidgetTextFieldBinding.inflate(LayoutInflater.from(context), this, true)
     }
-
 
     init {
         val fieldStyle = context.obtainStyledAttributes(attrs, R.styleable.text_field_attribute)
@@ -63,7 +61,6 @@ class WidgetTextField @JvmOverloads constructor(
                     binding.tilTextField.endIconMode = END_ICON_PASSWORD_TOGGLE
                     VALIDATION_TEXT
                 } else inputType
-            Log.d("TAG", "inputType: $inputType -> ${InputType.TYPE_CLASS_PHONE}")
             if (inputType == InputType.TYPE_CLASS_PHONE)
                 binding.edtTextField.filters += InputFilter.LengthFilter(15)
             binding.edtTextField.inputType = chosenInputType
@@ -72,6 +69,8 @@ class WidgetTextField @JvmOverloads constructor(
 
         fieldStyle.recycle()
     }
+
+    val text get() = binding.edtTextField.text.toString()
 
     private fun setUpValidation(inputType: Int) {
         when (if (customValidation != -1) getCustomInputType(customValidation) else inputType) {
