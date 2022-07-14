@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "415974287907",
+    "project_id": "gudangaja-b8934",
+    "storage_bucket": "gudangaja-b8934.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415974287907:android:ba4c1f641a7925b571df96",
+        "android_client_info": {
+          "package_name": "id.amita.gudangaja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415974287907-1v85vjd2n82ff0fe930v4i30og9cu1t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHpCvgXfiG0a-IOikhGh47Bw7sKHQkH8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415974287907-1v85vjd2n82ff0fe930v4i30og9cu1t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
